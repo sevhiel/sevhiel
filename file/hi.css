@@ -1,0 +1,142 @@
+.footer {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navbar-custom {
+    background-color: #6f42c1;
+    /* Purple background */
+}
+
+.search-box {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+}
+
+.search-box::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-container span {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    background-color: #543699;
+    padding: 2px 6px;
+    border-radius: 5px;
+    color: white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Oriya:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Serif Oriya", serif;
+
+}
+
+body {
+    background: url(sunset.jpg)no-repeat center center / cover;
+}
+
+nav {
+    padding: 0 50px;
+    width: 100%;
+}
+
+.navbar-one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+}
+
+.right {
+    display: flex;
+}
+
+.flex {
+    display: flex;
+
+    align-items: center;
+    list-style: none;
+}
+
+.flex a:hover {
+    color: rgb(197, 21, 21);
+    transition: 0.4s;
+    text-shadow: 0px 0px 9px;
+}
+
+.flex a::after {
+    content: "";
+    width: 0%;
+    height: 5px;
+    display: flex;
+    background-color: rgb(2, 154, 241);
+    align-items: center;
+    transition: 0.5s;
+}
+
+.flex a:hover::after {
+    width: 100%;
+}
+
+.flex a::before {
+    color: blue;
+
+}
+
+.navbar-one {
+    background: #000;
+    color: white;
+    height: 40px;
+    cursor: pointer;
+}
+
+.left>div+div {
+    margin-left: 40px;
+}
+
+.right>div {
+    margin-left: 40px;
+}
+
+.left>div:hover,
+.left>div:hover {
+    color: green;
+    transition: all 0.5s;
+}
+
+.right>div:hover,
+.right>div:hover {
+    color: green;
+    transition: all 0.5s;
+}
+
+body {
+    background-color: rgb(240, 229, 208);
+}

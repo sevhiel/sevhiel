@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/hi.css">
+    <style>
+        .footer {
+            background-color: black;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .navbar-custom {
+            background-color: #6f42c1;
+            /* Purple background */
+        }
+
+        .search-box {
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: none;
+            padding: 5px 10px;
+        }
+
+        .search-box::placeholder {
+            color: white;
+            opacity: 0.8;
+        }
+
+        .search-container {
+            position: relative;
+        }
+
+        .search-container span {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 12px;
+            background-color: #543699;
+            padding: 2px 6px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Oriya:wght@400..700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Noto Serif Oriya", serif;
+
+        }
+
+        body {
+            background: url(sunset.jpg)no-repeat center center / cover;
+        }
+
+        nav {
+            padding: 0 50px;
+            width: 100%;
+        }
+
+        .navbar-one {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .left {
+            display: flex;
+        }
+
+        .right {
+            display: flex;
+        }
+
+        .flex {
+            display: flex;
+
+            align-items: center;
+            list-style: none;
+        }
+
+        .flex a:hover {
+            color: rgb(197, 21, 21);
+            transition: 0.4s;
+            text-shadow: 0px 0px 9px;
+        }
+
+        .flex a::after {
+            content: "";
+            width: 0%;
+            height: 5px;
+            display: flex;
+            background-color: rgb(2, 154, 241);
+            align-items: center;
+            transition: 0.5s;
+        }
+
+        .flex a:hover::after {
+            width: 100%;
+        }
+
+        .flex a::before {
+            color: blue;
+
+        }
+
+        .navbar-one {
+            background: #000;
+            color: white;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .left>div+div {
+            margin-left: 40px;
+        }
+
+        .right>div {
+            margin-left: 40px;
+        }
+
+        .left>div:hover,
+        .left>div:hover {
+            color: green;
+            transition: all 0.5s;
+        }
+
+        .right>div:hover,
+        .right>div:hover {
+            color: green;
+            transition: all 0.5s;
+        }
+
+        body {
+            background-color: rgb(240, 229, 208);
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar-one">
+        <div class="left">
+            <div class="email">
+                <i class="fa fa-nevelope"></i>
+                <span>digitaluniversityofcambodia@gmail.com</span>
+            </div>
+            <div class="call">
+                <i class="fa fa-phone-alt"></i>
+                <span>( +855 ) 0979361072</span>
+            </div>
+        </div>
+        <div class="right">
+            <div class="twitter">
+                <i class="fab fa-twitter"></i>
+                <span>Twitter</span>
+            </div>
+            <div class="facebook">
+                <i class="fab fa-facebook"></i>
+                <span>Facebook</span>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom ">
+        <div class="container mt-2">
+            <a class="navbar-brand" href="#">
+                <img src="../image/image copy.png" width="30" height="30"
+                    alt="">
+                DUC
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item"><a class="nav-link text-white" href="./about.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="../file/about.html">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="./service.html">SERVICE</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="./contact.html">CONTACT</a></li>
+                </ul>
+                <form class="d-flex ms-auto search-container">
+                    <input class="form-control search-box" type="search" placeholder="Search">
+                    <span>submit</span>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <div class="text-center mt-5">
+        <h1>welcome to in cambodia DUC </h1>
+    </div>  -->
+   
+
+
+    
+    <!-- //from -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="../image/p1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Leader</h5>
+                    <p class="card-text">Meeting with executive leaders on student education.
+                        </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="../image/p2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Top management</h5>
+                    <p class="card-text">The digital university of cambodia is recognized by the Ministry of Education.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="../image/p6.jpg" class="card-img-top" >
+                <div class="card-body">
+                    <h5 class="card-title">School</h5>
+                    <p class="card-text">The duc school grounds are really beautiful, with a large area of ​​about 20 hectares.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="../image/p8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">class computer</h5>
+                    <p class="card-text">The computer class is one-on-one and has about 200 computers.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="../image/p9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"> students</h5>
+                    <p class="card-text">Students who pass the 12th exam and have a difficult life can come and apply.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="../image/p7.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">the student</h5>
+                    <p class="card-text">This is a very beautiful female student at the University of Digital Industry.</p>
+                </div>
+            </div>
+        </div>
+        
+        
+
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
